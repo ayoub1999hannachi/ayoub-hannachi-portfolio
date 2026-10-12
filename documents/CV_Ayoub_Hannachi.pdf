@@ -1,0 +1,136 @@
+%PDF-1.4
+% Ayoub Hannachi Resume
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 4888 >>
+stream
+0.070 0.120 0.200 rg 0 669 612 123 re f
+1.000 1.000 1.000 rg BT /F2 25 Tf 44.0 751.0 Td (AYOUB HANNACHI) Tj ET
+0.820 0.780 1.000 rg BT /F2 11 Tf 45.0 725.0 Td (DATA SCIENTIST  |  AI ENGINEER) Tj ET
+1.000 1.000 1.000 rg BT /F1 8.6 Tf 45.0 704.0 Td (ahannachi193@gmail.com  |  Tunisia) Tj ET
+0.910 0.920 0.960 rg BT /F1 8.1 Tf 45.0 689.0 Td (ayoubhannachi.com  |  github.com/ayoub1999hannachi) Tj ET
+0.910 0.920 0.960 rg BT /F1 8.1 Tf 45.0 676.0 Td (linkedin.com/in/ayoub-hannachi-0727931b0) Tj ET
+0.390 0.270 0.830 rg BT /F2 9 Tf 44.0 646.0 Td (PROFESSIONAL SUMMARY) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 640.0 m 568 640.0 l S
+0.340 0.390 0.470 rg BT /F1 8.8 Tf 44.0 628.0 Td (2026 Engineering graduate in Data Science and AI from UIK. Experience across machine-learning evaluation, Salesforce) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.8 Tf 44.0 616.5 Td (automation, ECG telemonitoring integration, and backend development. Interested in Data Scientist and AI Engineer) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.8 Tf 44.0 605.0 Td (roles.) Tj ET
+0.390 0.270 0.830 rg BT /F2 9 Tf 44.0 588.5 Td (TECHNICAL SKILLS) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 582.5 m 568 582.5 l S
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 44.0 570.5 Td (Programming: Python, SQL, Bash | ML: scikit-learn, XGBoost, LightGBM, SHAP) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 44.0 560.1 Td (Deep Learning: PyTorch, TensorFlow/Keras, CNNs | GenAI: RAG, LLM evaluation, Groq/Llama) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 44.0 549.7 Td (Backend and data: FastAPI, Flask, Node.js, Express, REST APIs, MongoDB) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 44.0 539.3 Td (Salesforce: Apex, Lightning Web Components, Flow, Agentforce | Tools: n8n, Git, pytest, GitHub Actions) Tj ET
+0.390 0.270 0.830 rg BT /F2 9 Tf 44.0 523.9 Td (EXPERIENCE) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 517.9 m 568 517.9 l S
+0.120 0.160 0.230 rg BT /F2 9.1 Tf 44.0 505.9 Td (PFE Consultant / Data Science Engineer | Talan Tunisia) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.7 Tf 421.0 505.9 Td (Feb-Jun 2026) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 493.9 Td (- Designed Smart Sales Advisor across Salesforce CRM, n8n lead automation, ML scoring/conversion, FastAPI and) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 483.5 Td (Agentforce-assisted sales workflows.) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 473.1 Td (- Kept model claims tied to synthetic or benchmark datasets and required manager approval for generated quotes.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.1 Tf 44.0 457.7 Td (Backend and AI Developer | Caredify) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.7 Tf 421.0 457.7 Td (Summer 2025) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 445.7 Td (- Integrated ECG inference into a telemedicine platform using a Node.js/Express gateway, Flask AI service,) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 435.3 Td (authentication and real-time alert escalation.) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 424.9 Td (- Model results were evaluated on MIT-BIH and European ST-T benchmark data; not presented as clinical production) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 414.5 Td (performance.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.1 Tf 44.0 399.1 Td (Web Developer Intern | CyberOcean) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.7 Tf 421.0 399.1 Td (Aug-Sep 2024) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 387.1 Td (- Solo-built a responsive MEVN marketplace workflow for client/provider profiles and service listings during an) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 376.7 Td (engineering-cycle internship.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.1 Tf 44.0 361.3 Td (Web and AI Developer Intern | CyberOcean) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.7 Tf 421.0 361.3 Td (2023-2024) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 349.3 Td (- Contributed to inventory and SaaS workflows in a Scrum team using Vue/Nuxt, Node.js, Socket.IO and RethinkDB.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.1 Tf 44.0 333.9 Td (Web Developer Intern | Tunisie Telecom) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.7 Tf 421.0 333.9 Td (2022) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 321.9 Td (- Built an academic PHP/MySQL services prototype with customer browsing, administrator workflows and UML design.) Tj ET
+0.390 0.270 0.830 rg BT /F2 9 Tf 44.0 305.5 Td (EDUCATION) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 299.5 m 568 299.5 l S
+0.120 0.160 0.230 rg BT /F2 8.6 Tf 44.0 287.5 Td (Engineering Degree - Data Science and AI | UIK) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.7 Tf 415.0 287.5 Td (2023-2026 | Graduated) Tj ET
+0.120 0.160 0.230 rg BT /F2 8.6 Tf 44.0 273.5 Td (Licence in Computer Science | ISI Kef) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.7 Tf 415.0 273.5 Td (2020-2023 | Graduated) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 34.0 m 568 34.0 l S
+0.340 0.390 0.470 rg BT /F1 7.5 Tf 44.0 21.0 Td (AYOUB HANNACHI  |  ayoubhannachi.com) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.5 Tf 540.0 21.0 Td (1 / 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 4130 >>
+stream
+0.070 0.120 0.200 rg 0 739 612 53 re f
+1.000 1.000 1.000 rg BT /F2 14 Tf 44.0 766.0 Td (SELECTED PROJECTS) Tj ET
+0.910 0.920 0.960 rg BT /F1 8 Tf 44.0 749.0 Td (Case studies, supporting resources and limitations are available on ayoubhannachi.com.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.3 Tf 44.0 718.0 Td (Smart Sales Advisor - Salesforce and Agentforce | Talan Tunisia, 2026) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 706.0 Td (Designed an end-to-end B2B sales workflow linking lead acquisition, enrichment, ML scoring, requirements analysis and) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 695.7 Td (quote preparation.) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 684.4 Td (Evidence: Sentiment ROC-AUC 0.952 on 76,703 reviews; conversion ROC-AUC 0.9445 on synthetic leads. Human approval) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 674.7 Td (remains required.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.3 Tf 44.0 658.0 Td (Caredify - AI-Assisted ECG Telemonitoring | 2025) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 646.0 Td (Integrated a two-stage ECG inference workflow with web/mobile clients, backend services and timed alert escalation.) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 634.7 Td (Evidence: Approx. 98% CNN results on MIT-BIH and approx. 93% XGBoost results on European ST-T; benchmark datasets, not) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 625.0 Td (clinical deployment.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.3 Tf 44.0 608.3 Td (Earthquake and Tsunami Risk - Reproducible ML Pipeline | UIK, 2025-2026) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 596.3 Td (Built a Python classification workflow with data checks, pytest, Makefile and GitHub Actions CI.) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 585.0 Td (Evidence: ROC-AUC 0.748; 0.90 accuracy matches the majority-class baseline. Documented severe class imbalance and) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 575.3 Td (detector limitations.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.3 Tf 44.0 558.6 Td (Fashion-MNIST - Classical Model Benchmark | UIK, 2023-2024) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 546.6 Td (Compared seven classical ML models on the official Fashion-MNIST split with cross-validation and class-level error) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 536.3 Td (analysis.) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 525.0 Td (Evidence: XGBoost 88.35% accuracy across 10 classes and 70,000 images; shirt-removal results are not comparable to the) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 515.3 Td (full benchmark.) Tj ET
+0.120 0.160 0.230 rg BT /F2 9.3 Tf 44.0 498.6 Td (Tuninventory - Multi-Instance Inventory SaaS | CyberOcean, 2023) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.1 Tf 49.0 486.6 Td (Contributed to inventory, product and administrator workflows in a four-developer Scrum team across three sprints.) Tj ET
+0.390 0.270 0.830 rg BT /F1 7.8 Tf 49.0 475.3 Td (Evidence: Demo: intern-dev-hannachi.monocommerce.tn; source is private to the internship.) Tj ET
+0.390 0.270 0.830 rg BT /F2 9 Tf 44.0 457.6 Td (SELECTED CREDENTIALS) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 451.6 m 568 451.6 l S
+0.340 0.390 0.470 rg BT /F1 8.2 Tf 44.0 439.6 Td (IBM Deep Learning with PyTorch, Keras and TensorFlow | IBM / Coursera, 2025) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.2 Tf 44.0 428.6 Td (Explainable AI \(XAI\) | Duke University / Coursera, 2025) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.2 Tf 44.0 417.6 Td (Fundamentals of Deep Learning | NVIDIA, 2025) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.2 Tf 44.0 406.6 Td (Evaluation and Light Customization of Large Language Models | NVIDIA, 2025) Tj ET
+0.340 0.390 0.470 rg BT /F1 8.2 Tf 44.0 395.6 Td (Learning Linux for LFCA Certification | LearnQuest / Coursera, 2023) Tj ET
+0.390 0.270 0.830 rg BT /F2 9 Tf 44.0 379.6 Td (LANGUAGES) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 373.6 m 568 373.6 l S
+0.340 0.390 0.470 rg BT /F1 8.8 Tf 44.0 361.6 Td (Arabic | French | English) Tj ET
+0.850 0.860 0.900 RG 0.6 w 44 34.0 m 568 34.0 l S
+0.340 0.390 0.470 rg BT /F1 7.5 Tf 44.0 21.0 Td (AYOUB HANNACHI  |  ayoubhannachi.com) Tj ET
+0.340 0.390 0.470 rg BT /F1 7.5 Tf 540.0 21.0 Td (2 / 2) Tj ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000033 00000 n 
+0000000082 00000 n 
+0000000145 00000 n 
+0000000215 00000 n 
+0000000290 00000 n 
+0000000368 00000 n 
+0000000514 00000 n 
+0000005453 00000 n 
+0000005599 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+9780
+%%EOF
