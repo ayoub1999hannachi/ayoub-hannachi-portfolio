@@ -1539,6 +1539,9 @@ html.reveal-ready .reveal:not(.in-view){
 @keyframes sectionDataSweep{0%{inset-inline-start:-38%;opacity:0}15%{opacity:.9}85%{opacity:.8}100%{inset-inline-start:108%;opacity:0}}
 html[dir="rtl"] .about-card.reveal.in-view::after,html[dir="rtl"] .career-panel.reveal.in-view::after,html[dir="rtl"] .skills-panel.reveal.in-view::after,html[dir="rtl"] .certs-panel.reveal.in-view::after,html[dir="rtl"] #contact.reveal.in-view::after{animation-name:sectionDataSweepRtl}
 @keyframes sectionDataSweepRtl{0%{inset-inline-start:108%;opacity:0}15%{opacity:.9}85%{opacity:.8}100%{inset-inline-start:-38%;opacity:0}}
+@media(max-width:760px){
+  .career-panel.reveal,.skills-panel.reveal,.certs-panel.reveal,#contact.reveal{overflow-x:clip}
+}
 .low-bandwidth .reveal{transition-duration:.25s}
 .low-bandwidth .about-card.reveal::after,.low-bandwidth .career-panel.reveal::after,.low-bandwidth .skills-panel.reveal::after,.low-bandwidth .certs-panel.reveal::after,.low-bandwidth #contact.reveal::after{animation:none!important}
 .low-bandwidth .project-cover::after,.low-bandwidth .skill-group .skill-chip::after{display:none!important}
