@@ -264,8 +264,8 @@ main#top{padding-top:101px!important}
       .site-header .header-home-mark .material-symbols-outlined{font-size:18px!important}
       .site-header .header-actions{gap:4px!important}
       .site-header #langseg{padding:3px!important}
-      .site-header #langseg button[data-l]{padding-left:8px!important;padding-right:8px!important}
-      .site-header #dark-toggle{width:36px!important;height:36px!important}
+      .site-header #langseg button[data-l]{min-width:40px;min-height:40px;padding:8px!important}
+      .site-header #dark-toggle{width:44px!important;height:44px!important}
 
       .hero-layout{
         grid-template-columns:1fr;
@@ -275,6 +275,9 @@ main#top{padding-top:101px!important}
       }
       .hero-portrait{order:1;justify-self:center;width:clamp(132px,38vw,180px);height:clamp(132px,38vw,180px)}
       .hero-copy{order:2;grid-column:auto;width:100%;text-align:center}
+      .hero-copy h1{justify-content:center;text-align:center}
+      .hero-domain-label{align-self:center;margin-inline:auto}
+      .hero-copy #t-tag{margin-inline:auto;text-align:center}
       .hero-copy .flex{justify-content:center}
       .hero-socials{order:3;grid-column:auto;width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}
       .hero-socials a{min-height:118px!important;padding:15px!important}
@@ -291,8 +294,8 @@ main#top{padding-top:101px!important}
     @media (max-width:560px){
       .site-header{width:calc(100vw - 12px)!important}
       .site-header .header-home-mark{width:34px!important;height:34px!important}
-      .site-header #dark-toggle{width:34px!important;height:34px!important}
-      .site-header #langseg button[data-l]{padding-left:7px!important;padding-right:7px!important}
+      .site-header #dark-toggle{width:44px!important;height:44px!important}
+      .site-header #langseg button[data-l]{min-width:40px;min-height:40px;padding:8px!important}
       main#top{padding-top:78px!important}
       .hero-socials{grid-template-columns:1fr}
       #projgrid,#skillgrid,#certgrid{grid-template-columns:1fr!important}
@@ -301,8 +304,8 @@ main#top{padding-top:101px!important}
     @media (max-width:380px){
       .site-header{padding-left:6px!important;padding-right:6px!important}
       .site-header .header-home-mark{width:32px!important;height:32px!important}
-      .site-header #dark-toggle{width:32px!important;height:32px!important}
-      .site-header #langseg button[data-l]{padding-left:6px!important;padding-right:6px!important;font-size:10px!important}
+      .site-header #dark-toggle{width:44px!important;height:44px!important}
+      .site-header #langseg button[data-l]{min-width:40px;min-height:40px;padding:8px!important;font-size:10px!important}
       main#top{padding-top:74px!important;padding-left:8px!important;padding-right:8px!important}
       .hero-copy h1{font-size:1.55rem!important;line-height:1.15}
       .hero-copy > p.text-xl{font-size:1.05rem!important}
@@ -1639,12 +1642,7 @@ html.dark #skillgrid .skill-group:nth-child(n){
     <a href="#top" class="flex items-center gap-3 text-text-primary shrink-0" aria-label="Home">
       <div class="header-home-mark size-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-primary to-blue-400 text-white shadow-lg shadow-primary/20" aria-hidden="true">
         <svg class="header-ai-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 9.5 16 6l6 3.5v7L16 20l-6-3.5v-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-          <path d="m10 16.5-4 2.3v5l4 2.2 4-2.2v-4M22 16.5l4 2.3v5l-4 2.2-4-2.2v-4M16 6V3M6 21l-2-1M26 21l2-1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="16" cy="13" r="2" fill="currentColor"/>
-          <circle cx="16" cy="3" r="1.5" fill="currentColor"/>
-          <circle cx="4" cy="20" r="1.5" fill="currentColor"/>
-          <circle cx="28" cy="20" r="1.5" fill="currentColor"/>
+          <path d="M18.5 2.5 7 17h6.4l-1.9 12.5L25 13.8h-6.5l3-11.3Z" fill="currentColor" stroke="currentColor" stroke-linejoin="round"/>
         </svg>
       </div>
     </a>
@@ -1969,8 +1967,8 @@ fr:{
   projectResources:"Ressources du projet", previousImage:"Image précédente", nextImage:"Image suivante", fullscreenImage:"Afficher l’image en plein écran", projectImages:"Images du projet", imageLabel:"Image",
   certificateDialogControls:"Commandes de la fenêtre du certificat", fullscreenCertificate:"Afficher le certificat en plein écran", closeCertificate:"Fermer le certificat", credentialIdLabel:"Identifiant du certificat",
   contribution:"Ma contribution", challengesAndSolutions:"Défis et solutions",
-  role:"Scientifique des données et ingénieur en IA",
-  open:"Diplômé 2026 · Ouvert aux opportunités",
+  role:"Data Science & IA",
+  open:"Diplômé 2026 · Disponible",
   hi:"Bonjour, je suis Ayoub Hannachi.",
   tag:"Je conçois des workflows concrets en data et IA, de l’évaluation des modèles à leur intégration produit.<br>Expérience en automatisation Salesforce, ML appliqué à l’ECG et pipelines Python reproductibles.",
   cta:"Discutons", cv:"Télécharger le CV", heroCv:"Télécharger CV", cvDownload:"Télécharger mon CV", viewProjects:"Voir les projets", navLabel:"Navigation par section", navProjects:"Projets", navExperience:"Expérience", navEducation:"Formation", navSkills:"Compétences", navContact:"Contact", hdrcta:"Me contacter", contactSub:"M'écrire", cvSub:"CV en PDF",
@@ -2005,7 +2003,7 @@ ar:{
   projectResources:"موارد المشروع", previousImage:"الصورة السابقة", nextImage:"الصورة التالية", fullscreenImage:"عرض الصورة بملء الشاشة", projectImages:"صور المشروع", imageLabel:"الصورة",
   certificateDialogControls:"أدوات نافذة الشهادة", fullscreenCertificate:"عرض الشهادة بملء الشاشة", closeCertificate:"إغلاق الشهادة", credentialIdLabel:"رقم الشهادة",
   contribution:"مساهمتي", challengesAndSolutions:"التحديات والحلول",
-  role:"عالِم بيانات ومهندس ذكاء اصطناعي",
+  role:"علوم البيانات والذكاء الاصطناعي",
   skipContent:"الانتقال إلى المحتوى",
   open:"خريج 2026 · متاح للعمل",
   hi:"مرحبًا، أنا أيوب حنّاشي.",
