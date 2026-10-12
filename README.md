@@ -14,7 +14,7 @@ The site entry point is `index.html`; `images/` contains the website's image ass
 
 After the first deployment, keep the GitHub repository connected to the Vercel project. Commit and push each update to the configured production branch; Vercel will build and publish it automatically. Pushes to other branches create preview deployments.
 
-## Before going live
+## Deployment notes
 
-- The canonical URL, social preview metadata, and sitemap currently use `https://ayoubhannachi.com/`. Update them if deploying to a different domain.
-- Once Vercel assigns the final site URL, confirm the canonical URL, social metadata, sitemap, and EmailJS allowed origin match that domain.
+- The canonical URL, social preview metadata, sitemap, and `robots.txt` use `https://ayoub-hannachi-portfolio.vercel.app/`.
+- If you later add a custom domain, update those URLs and the EmailJS allowed origin to match it.
