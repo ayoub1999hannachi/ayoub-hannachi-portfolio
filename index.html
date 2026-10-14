@@ -589,7 +589,12 @@ html.dark .popup-action-close:hover{border-color:rgba(248,113,113,.25);backgroun
 @media (max-width:640px){.gallery-main img{height:42vh}.gallery-arrow{width:36px;height:36px}.gallery-thumb{flex-basis:52px;width:52px;height:38px}}
 @media (max-width:380px){main#top{padding-top:93px!important}}
 @media (max-width:900px){.certgrid-responsive{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-@media (max-width:560px){.certgrid-responsive{grid-template-columns:1fr!important}.cert-card{min-height:118px;padding:14px!important}.cert-card > img{width:84px;height:62px}.cert-card > span > span:first-child{-webkit-line-clamp:2}}
+@media (max-width:560px){
+  #certgrid.certgrid-responsive{grid-template-columns:1fr!important}
+  .certs-panel .cert-card{min-height:118px;padding:14px!important}
+  .certs-panel .cert-card > img{width:84px;height:62px}
+  .certs-panel .cert-card > span > span:first-child{-webkit-line-clamp:2}
+}
 
 /* Long words, buttons and embedded content should never create horizontal overflow. */
 button,a{max-width:100%}
@@ -615,8 +620,8 @@ button,a{max-width:100%}
   line-height:1.6;
   display:-webkit-box;
   -webkit-box-orient:vertical;
-  -webkit-line-clamp:4;
-  line-clamp:4;
+  -webkit-line-clamp:3;
+  line-clamp:3;
   overflow:hidden;
 }
 .project-card{padding:12px!important;border-radius:22px!important;border-color:rgba(128,128,145,.14)!important}
@@ -636,7 +641,7 @@ button,a{max-width:100%}
 .project-resource-note{display:inline-flex;align-items:center;gap:6px;padding:0 4px;color:rgb(var(--c-text3));font-size:.72rem;font-weight:600}
 .project-resource-link:focus-visible{outline:2px solid rgb(var(--c-primary));outline-offset:2px}
 html.dark .project-card{border-color:rgba(255,255,255,.09)!important}
-@media(max-width:560px){.project-card{padding:10px!important;border-radius:18px!important}.project-cover{border-radius:13px!important}.project-card h4{min-height:0}.project-card .project-desc{min-height:0;-webkit-line-clamp:4;line-clamp:4}}
+@media(max-width:560px){.project-card{padding:10px!important;border-radius:18px!important}.project-cover{border-radius:13px!important}.project-card h4{min-height:2.8em}.project-card .project-desc{min-height:4.65em;-webkit-line-clamp:3;line-clamp:3}}
 /* popup: prevent text overflow */
 #sheet{display:flex;flex-direction:column;min-height:0;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);word-break:break-word;overflow-wrap:break-word}
 #sheet-header{flex:0 0 auto;min-width:0}
@@ -940,12 +945,13 @@ html[dir="rtl"] #explist .timeline-link:hover{transform:translateX(-2px)}
 
 /* ---- compact availability indicator overlays the portrait ---- */
 .hero-portrait-wrap{position:relative;order:1;justify-self:center;min-width:0;width:max-content}
-.hero-open-badge{position:absolute;left:50%;bottom:-12px;z-index:2;display:flex;max-width:calc(100vw - 36px);align-items:center;justify-content:center;gap:4px;transform:translateX(-50%);padding:5px 8px;border:2px solid rgb(var(--c-surface));border-radius:999px;background:linear-gradient(145deg,#34d399,#059669);color:#fff;box-shadow:0 4px 14px rgba(5,150,105,.3);white-space:nowrap}
-.hero-open-badge .material-symbols-outlined{flex:0 0 auto;font-size:13px;font-variation-settings:'FILL' 1,'wght' 650,'GRAD' 0,'opsz' 20}
-.hero-open-label{min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:clamp(.58rem,1vw,.72rem);font-weight:750;line-height:1.25}
+.hero-open-badge{position:absolute;left:50%;bottom:-12px;z-index:2;display:flex;max-width:calc(100vw - 36px);align-items:center;justify-content:center;gap:3px;transform:translateX(-50%);padding:4px 7px;border:2px solid rgb(var(--c-surface));border-radius:999px;background:linear-gradient(145deg,#34d399,#059669);color:#fff;box-shadow:0 4px 14px rgba(5,150,105,.3);white-space:nowrap}
+.hero-open-badge .material-symbols-outlined{flex:0 0 auto;font-size:11px!important;font-variation-settings:'FILL' 1,'wght' 650,'GRAD' 0,'opsz' 20}
+.hero-open-label{min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:clamp(.52rem,.8vw,.64rem);font-weight:750;line-height:1.25}
 @media (max-width:480px){
-  .hero-open-badge{bottom:-10px;gap:4px;padding:5px 8px}
-  .hero-open-badge .material-symbols-outlined{font-size:12px}
+  .hero-open-badge{bottom:-35px;gap:3px;padding:3px 6px}
+  .hero-open-badge .material-symbols-outlined{font-size:10px!important}
+  .hero-portrait-wrap{margin-bottom:16px}
 }
 @media(max-width:360px){.popup-content-header{align-items:flex-start;gap:10px}.popup-actions{gap:3px;padding:3px}.popup-action{width:36px;height:36px}}
 
@@ -966,7 +972,7 @@ body{
 html.dark .hero-card{border-color:rgba(184,157,255,.16);box-shadow:0 22px 64px rgba(0,0,0,.24)!important}
 .hero-card{padding-inline:clamp(18px,2.2vw,26px)!important}
 .hero-copy h1{display:flex;align-items:center;gap:10px;font-size:clamp(1.5rem,2.35vw,2.1rem)!important;line-height:1.12;letter-spacing:-.045em}
-.hero-copy h1::before{content:"hub";display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:1.45em;height:1.45em;border:1px solid rgb(var(--c-primary) / .24);border-radius:.48em;background:linear-gradient(145deg,rgb(var(--c-primary) / .16),rgba(245,158,11,.1));color:rgb(var(--c-primary));font-family:'Material Symbols Outlined';font-size:.48em;font-weight:normal;line-height:1;font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 20;box-shadow:0 4px 12px rgb(var(--c-primary) / .1)}
+.hero-copy h1::before{content:none}
 html[dir="rtl"] .hero-copy h1{letter-spacing:0}
 .hero-domain-label{display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:100%;margin:7px 0 15px;padding:8px 13px;border:1px solid rgb(var(--c-primary) / .26);border-radius:12px;background:linear-gradient(110deg,rgb(var(--c-primary) / .13),rgba(245,158,11,.08));color:rgb(var(--c-text));font-size:clamp(.82rem,1.2vw,.96rem);font-weight:750;line-height:1.2;letter-spacing:-.015em;box-shadow:0 5px 16px rgb(var(--c-primary) / .08)}
 .hero-domain-label .material-symbols-outlined{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:8px;background:rgb(var(--c-primary) / .14);color:rgb(var(--c-primary));font-size:16px;line-height:1}
@@ -1077,14 +1083,23 @@ html.dark .project-card:focus-visible .project-cover .project-details-button{
   color:#fff;
 }
 .project-card h4{font-size:.96rem;line-height:1.4;letter-spacing:-.015em}
+@media(min-width:761px){
+  .project-card h4{min-height:1.4em;white-space:nowrap;overflow:hidden;text-overflow:clip;font-size:11.5px!important;letter-spacing:-.04em}
+}
+@media(min-width:761px) and (max-width:860px){
+  #projgrid{grid-template-columns:1fr!important}
+}
+@media(min-width:861px) and (max-width:1200px){
+  #projgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
 .project-card .project-desc{
   display:-webkit-box;
-  min-height:0;
+  min-height:4.65em;
   margin-bottom:12px;
   overflow:hidden;
   -webkit-box-orient:vertical;
-  -webkit-line-clamp:2;
-  line-clamp:2;
+  -webkit-line-clamp:3;
+  line-clamp:3;
   line-height:1.55;
 }
 .project-stack-list{
@@ -1149,7 +1164,7 @@ html.dark .project-stack-list li{border-color:rgba(255,255,255,.12);background:r
   width:max-content;
   max-width:100%;
   min-height:34px;
-  margin-top:16px;
+  margin-top:auto;
   padding:0 11px;
   border:1px solid rgb(var(--c-primary) / .22);
   border-radius:9px;
@@ -1228,7 +1243,7 @@ html.dark .project-card:hover{box-shadow:0 18px 36px rgba(0,0,0,.28)}
   html{scroll-padding-top:76px}
   .hero-card{border-radius:23px!important}
   .hero-card{padding-inline:14px!important}
-  .hero-copy h1{font-size:clamp(1.32rem,5.2vw,1.58rem)!important;line-height:1.14;gap:8px}
+  .hero-copy h1{font-size:clamp(1.32rem,5.2vw,1.58rem)!important;line-height:1.14;gap:7px}
   .hero-socials{max-width:440px}
   .hero-socials a{min-height:84px!important;height:auto!important;padding:10px!important}
   .hero-socials a .brandmark{width:42px;height:42px}
@@ -1241,6 +1256,11 @@ html.dark .project-card:hover{box-shadow:0 18px 36px rgba(0,0,0,.28)}
   #explist .timeline-link > p:nth-of-type(4){font-size:.87rem;line-height:1.65}
   .skill-group{padding:15px}
   .certs-panel .cert-card{padding:14px!important}
+}
+@media(max-width:560px){
+  .hero-open-badge{gap:2px;padding:3px 6px}
+  .hero-open-badge .material-symbols-outlined{font-size:9px!important}
+  .hero-open-label{font-size:.5rem}
 }
 /* ---- polished project technology and challenge presentation ---- */
 .project-card{
@@ -1765,6 +1785,7 @@ html.dark #skillgrid .skill-group:nth-child(n){
             <p id="p-projects" class="text-text-secondary text-sm mt-1"></p>
           </div>
           <button id="togglebtn" type="button"
+            aria-controls="projgrid" aria-expanded="false"
             class="text-text-primary text-sm font-semibold hover:text-primary transition-colors flex items-center justify-center md:justify-start gap-2 border border-gray-200 dark:border-white/20 w-10 h-10 md:w-auto md:h-auto md:px-4 md:py-2 rounded-full bg-surface shadow-sm hover:bg-gray-50 dark:hover:bg-white/10 shrink-0">
             <span id="t-toggle" class="hidden md:inline"></span>
             <span class="material-symbols-outlined ui-icon flip">arrow_forward</span>
@@ -1772,6 +1793,11 @@ html.dark #skillgrid .skill-group:nth-child(n){
         </div>
         <div id="projfilters" class="flex flex-wrap gap-2 mb-6 px-2 sm:px-4"></div>
         <div id="projgrid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+        <button id="togglebtn-mobile" type="button" aria-controls="projgrid" aria-expanded="false"
+          class="mt-6 mx-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-gray-200 dark:border-white/20 bg-surface px-5 py-2.5 text-sm font-semibold text-text-primary shadow-sm transition-colors hover:border-primary hover:text-primary hover:bg-gray-50 dark:hover:bg-white/10">
+          <span id="t-toggle-mobile"></span>
+          <span class="material-symbols-outlined ui-icon">expand_more</span>
+        </button>
       </section>
 
       <!-- ---------- EXPERIENCE ---------- -->
@@ -1970,8 +1996,8 @@ fr:{
   projectResources:"Ressources du projet", previousImage:"Image précédente", nextImage:"Image suivante", fullscreenImage:"Afficher l’image en plein écran", projectImages:"Images du projet", imageLabel:"Image",
   certificateDialogControls:"Commandes de la fenêtre du certificat", fullscreenCertificate:"Afficher le certificat en plein écran", closeCertificate:"Fermer le certificat", credentialIdLabel:"Identifiant du certificat",
   contribution:"Ma contribution", challengesAndSolutions:"Défis et solutions",
-  role:"Data Science & IA",
-  open:"Diplômé 2026 · Disponible",
+  role:"Science des données et intelligence artificielle",
+  open:"Diplômé en 2026 · À l’écoute d’opportunités",
   hi:"Bonjour, je suis Ayoub Hannachi.",
   tag:"Je conçois des workflows concrets en data et IA, de l’évaluation des modèles à leur intégration produit.<br>Expérience en automatisation Salesforce, ML appliqué à l’ECG et pipelines Python reproductibles.",
   cta:"Discutons", cv:"Télécharger le CV", heroCv:"Télécharger CV", cvDownload:"Télécharger mon CV", viewProjects:"Voir les projets", navLabel:"Navigation par section", navProjects:"Projets", navExperience:"Expérience", navEducation:"Formation", navSkills:"Compétences", navContact:"Contact", hdrcta:"Me contacter", contactSub:"M'écrire", cvSub:"CV en PDF",
@@ -1995,7 +2021,7 @@ fr:{
   pContact:"Ouvert aux opportunités en Data Science et IA, aux stages, aux missions freelance et aux collaborations professionnelles.",
   contactKicker:"Contact", reachMe:"Me joindre", emailLabel:"E-mail", linkedinLabel:"LinkedIn", locationLabel:"Localisation", contactLocation:"Tunisie", availabilityLabel:"Disponibilité", contactAvailability:"Ouvert aux opportunités",
   contactFormTitle:"Envoyer un message", nameLabel:"Votre nom", emailFieldLabel:"Votre e-mail", subjectLabel:"Objet", messageLabel:"Message", sendMessage:"Envoyer le message", contactMailStatus:"Votre application e-mail va s’ouvrir pour envoyer le message. Si elle ne s’ouvre pas, écrivez-moi directement à", contactSuccess:"Message envoyé avec succès. Merci pour votre message.", contactError:"Le message n’a pas pu être envoyé. Écrivez-moi directement à",
-  footerRole:"Data Scientist · AI Engineer · Salesforce", rights:"© 2026 Ayoub Hannachi. Tous droits réservés.", statProjects:"Projets", statCertifications:"Certifications", statExperience:"Expériences", statFocusAreas:"Domaines", footerLinksLabel:"Liens de pied de page", footerGithub:"GitHub", footerLinkedin:"LinkedIn", footerEmail:"E-mail", footerCv:"CV",
+  footerRole:"Scientifique des données · Ingénieur en IA · Salesforce", rights:"© 2026 Ayoub Hannachi. Tous droits réservés.", statProjects:"Projets", statCertifications:"Certifications", statExperience:"Expériences", statFocusAreas:"Domaines", footerLinksLabel:"Liens de pied de page", footerGithub:"GitHub", footerLinkedin:"LinkedIn", footerEmail:"E-mail", footerCv:"CV",
   mObj:"Objectif", mCtx:"Contexte", mPipe:"Pipeline et architecture", mData:"Données", mRes:"Résultats clés", mPts:"Points clés", mLim:"Limites", mStack:"Stack", datasetSource:"Sources des données", synthetic:"Données synthétiques", privateData:"Privé / non publié", applicationData:"Données applicatives (pas un jeu public)", challenge:"Défi", solution:"Solution",
   filAll:"Tout", filAi:"IA & ML", filWeb:"Web & Systèmes", filCrm:"Salesforce & CRM", filData:"Données & Analytique"
 },
@@ -2494,9 +2520,9 @@ var P = [
     ar:{subtitle:"منصة برمجيات سحابية لإدارة المخزون",desc:"منصة مخزون متعددة النسخ مرتبطة بنظام تجارة إلكترونية، أُنجزت عبر ثلاث دورات عمل باستخدام منهجية Scrum.",metrics:["ثلاث دورات عمل","برمجيات سحابية متعددة النسخ","تحديثات فورية"]}
   },
   i18n:{
-    en:{title:"Tuninventory — Multi-Instance Inventory SaaS",desc:"A cloud inventory platform structured as a multi-instance SaaS product and connected to e-commerce workflows.",context:"Licence PFE internship at CyberOcean, Manouba Technopark, 2023. Team project with four developers using Scrum.",pipeline:"Multi-instance SaaS → Node.js API with MVC → Vue.js/Nuxt.js/Vuetify frontend with MVVM → RethinkDB data layer → Socket.IO real-time updates.",data:"Inventory domain: products, product variants, collections, employees/roles and posted-data requests. Each client instance has isolated application and database resources.",results:[["Sprint 1 · Variants","Create, edit, delete and search variants; create products with variant options"],["Sprint 2 · Product web","Product pages, product variants, collections, search, sorting, cart and favorites"],["Sprint 3 · Posted data","Visitor submission form, real-time admin notification, copy/mark-unread/delete management"]],points:["Worked across the three delivered sprints in a four-developer Scrum team","Implemented both customer-facing product flows and administrator inventory workflows","Used Socket.IO for real-time posted-data notifications","Role-based access distinguishes administrator, seller, blogger, moderator and developer capabilities"],contribution:["Contributed across all three Scrum sprints, covering both customer-facing flows and admin-side inventory operations.","Implemented product and variant management workflows within a four-developer team, keeping the SaaS aligned with the client’s commerce needs.","Helped validate the real-time posted-data notification flow through the shared Socket.IO layer and end-to-end product operations."],challenges:[{title:"Multi-instance SaaS coordination",solution:"The platform was structured around isolated client instances with shared SaaS logic, so each tenant could keep its own application and database resources while reusing the same inventory workflows."},{title:"Real-time operational visibility",solution:"Posted-data requests were surfaced to administrators instantly through Socket.IO notifications, which reduced friction and shortened the triage cycle for inventory operations."},{title:"Scoped delivery in a confidential internship",solution:"The project documented only the delivered sprint scope and separated broader mobile or commerce ambitions from the validated product evidence."}],limits:"The source code is confidential because it was developed during the CyberOcean internship. The mobile employee application and some broader commerce/inventory capabilities were documented as perspectives rather than claimed here as delivered.",stack:"Vue.js, Nuxt.js, Vuetify, Node.js, Express/MVC, RethinkDB, Socket.IO, Scrum, UML"},
-    fr:{title:"Tuninventory — SaaS multi-instance de gestion d’inventaire",desc:"Une plateforme cloud de gestion d’inventaire structurée comme un produit SaaS multi-instance et connectée aux workflows e-commerce.",context:"Stage de fin d'études de licence chez CyberOcean, Manouba Technopark, 2023. Projet d'équipe de quatre développeurs mené avec Scrum.",pipeline:"SaaS multi-instance → API Node.js structurée en MVC → frontend Vue.js/Nuxt.js/Vuetify organisé en MVVM → données RethinkDB → mises à jour temps réel avec Socket.IO.",data:"Domaine métier : produits, variantes, collections, employés/rôles et demandes posted data. Chaque instance client possède des ressources applicatives et une base isolées.",results:[["Sprint 1 · Variantes","Ajouter, modifier, supprimer et rechercher des variantes ; créer un produit avec options"],["Sprint 2 · Product web","Pages produit, variantes, collections, recherche, tri, panier et favoris"],["Sprint 3 · Posted data","Formulaire visiteur, notification temps réel à l'administrateur, consultation, copie, marquage et suppression"]],points:["Contribution aux trois sprints livrés dans une équipe Scrum de quatre développeurs","Réalisation de parcours côté client et de workflows d'inventaire côté administrateur","Intégration de Socket.IO pour les notifications temps réel des demandes","Gestion des rôles : administrateur, vendeur, blogueur, modérateur et développeur"],contribution:["J'ai contribué aux trois sprints Scrum, en couvrant les parcours côté client et les workflows d'inventaire côté administrateur.","J'ai mis en place les flux de gestion des produits et des variantes dans une équipe de quatre développeurs, en restant aligné sur les besoins e-commerce du client.","J'ai validé les mécanismes de notification temps réel pour les demandes via la couche Socket.IO partagée."],challenges:[{title:"Coordination d'un SaaS multi-instance",solution:"La plateforme a été structurée autour d'instances clientes isolées avec une logique SaaS partagée, pour conserver des ressources applicatives et de données propres à chaque client tout en réutilisant les mêmes workflows."},{title:"Visibilité opérationnelle en temps réel",solution:"Les demandes des visiteurs étaient remontées instantanément aux administrateurs via les notifications Socket.IO, ce qui réduisait le temps de tri et le temps de traitement."},{title:"Périmètre maîtrisé dans un stage confidentiel",solution:"Le projet a documenté uniquement le périmètre livré pendant les sprints et a séparé les ambitions mobiles ou e-commerce plus larges du périmètre validé."}],limits:"Le code source est confidentiel car il a été développé pendant le stage chez CyberOcean. L'application mobile employé et certaines extensions sont présentées comme perspectives et ne sont pas revendiquées comme livrées.",stack:"Vue.js, Nuxt.js, Vuetify, Node.js, Express/MVC, RethinkDB, Socket.IO, Scrum, UML"},
-    ar:{title:"Tuninventory — منصة SaaS متعددة النسخ لإدارة المخزون",desc:"منصة سحابية لإدارة المخزون مبنية كمنتج SaaS متعدد النسخ ومرتبطة بسير عمل التجارة الإلكترونية.",context:"تدريب مشروع نهاية الإجازة في CyberOcean، Manouba Technopark، 2023. مشروع جماعي لفريق من أربعة مطورين باستخدام Scrum.",pipeline:"SaaS متعددة النسخ ← API بـNode.js وفق MVC ← واجهة Vue.js/Nuxt.js/Vuetify وفق MVVM ← طبقة بيانات RethinkDB ← تحديثات فورية عبر Socket.IO.",data:"مجال التطبيق: المنتجات والمتغيرات والمجموعات والموظفون والأدوار وطلبات posted data. لكل نسخة عميل موارد تطبيق وقاعدة بيانات معزولة.",results:[["Sprint 1 · المتغيرات","إضافة وتعديل وحذف والبحث عن المتغيرات وإنشاء منتجات بخياراتها"],["Sprint 2 · Product web","صفحات المنتجات والمتغيرات والمجموعات والبحث والترتيب والسلة والمفضلة"],["Sprint 3 · Posted data","نموذج للزائر وإشعار فوري للمشرف وإدارة العرض والنسخ والتعليم كمقروء والحذف"]],points:["المساهمة في Sprints الثلاثة المنجزة ضمن فريق Scrum من أربعة مطورين","تطوير مسارات العميل وعمليات إدارة المخزون للمشرف","دمج Socket.IO للإشعارات الفورية لطلبات posted data","صلاحيات حسب الدور: مشرف وبائع ومدون ومراقب ومطور"],contribution:["ساهمت في جميع sprints الثلاثة، عبر تغطية مسارات العميل وعمليات إدارة المخزون من جهة المشرف.","نظّمت إدارة المنتجات والمتغيرات داخل فريق من أربعة مطورين مع الالتزام باحتياجات التجارة الإلكترونية للعميل.","قمت بالتحقق من تدفق الإشعارات الفورية لطلبات posted data عبر طبقة Socket.IO المشتركة."],challenges:[{title:"تنسيق SaaS متعدد النسخ",solution:"تمت بنية المنصة حول نسخ عميل معزولة مع منطق SaaS مشترك، بحيث يحتفظ كل عميل بموارده التطبيقية وقاعدة البيانات الخاصة به مع إعادة استخدام نفس مسارات المخزون."},{title:"الرؤية التشغيلية الفورية",solution:"تم رفع طلبات posted data فورًا إلى المشرفين عبر إشعارات Socket.IO، مما قلّل وقت التصفية وسرّع معالجة العمليات."},{title:"نطاق محدد في تدريب سري",solution:"وثّق المشروع فقط النطاق المنجز عبر الـsprints وميز بين الطموحات الأكبر في الموبايل أو التجارة الإلكترونية وبين الأدلة الموثقة للتسليم."}],limits:"الكود المصدري سري لأنه أُنجز أثناء التدريب في CyberOcean. تطبيق الهاتف وبعض التوسعات مذكورة كآفاق مستقبلية وليست ضمن العمل المنجز المؤكد.",stack:"Vue.js، Nuxt.js، Vuetify، Node.js، Express/MVC، RethinkDB، Socket.IO، Scrum، UML"}
+    en:{title:"Monocommerce — Multi-Instance Inventory SaaS",desc:"A cloud inventory platform structured as a multi-instance SaaS product and connected to e-commerce workflows.",context:"Licence PFE internship at CyberOcean, Manouba Technopark, 2023. Team project with four developers using Scrum.",pipeline:"Multi-instance SaaS → Node.js API with MVC → Vue.js/Nuxt.js/Vuetify frontend with MVVM → RethinkDB data layer → Socket.IO real-time updates.",data:"Inventory domain: products, product variants, collections, employees/roles and posted-data requests. Each client instance has isolated application and database resources.",results:[["Sprint 1 · Variants","Create, edit, delete and search variants; create products with variant options"],["Sprint 2 · Product web","Product pages, product variants, collections, search, sorting, cart and favorites"],["Sprint 3 · Posted data","Visitor submission form, real-time admin notification, copy/mark-unread/delete management"]],points:["Worked across the three delivered sprints in a four-developer Scrum team","Implemented both customer-facing product flows and administrator inventory workflows","Used Socket.IO for real-time posted-data notifications","Role-based access distinguishes administrator, seller, blogger, moderator and developer capabilities"],contribution:["Contributed across all three Scrum sprints, covering both customer-facing flows and admin-side inventory operations.","Implemented product and variant management workflows within a four-developer team, keeping the SaaS aligned with the client’s commerce needs.","Helped validate the real-time posted-data notification flow through the shared Socket.IO layer and end-to-end product operations."],challenges:[{title:"Multi-instance SaaS coordination",solution:"The platform was structured around isolated client instances with shared SaaS logic, so each tenant could keep its own application and database resources while reusing the same inventory workflows."},{title:"Real-time operational visibility",solution:"Posted-data requests were surfaced to administrators instantly through Socket.IO notifications, which reduced friction and shortened the triage cycle for inventory operations."},{title:"Scoped delivery in a confidential internship",solution:"The project documented only the delivered sprint scope and separated broader mobile or commerce ambitions from the validated product evidence."}],limits:"The source code is confidential because it was developed during the CyberOcean internship. The mobile employee application and some broader commerce/inventory capabilities were documented as perspectives rather than claimed here as delivered.",stack:"Vue.js, Nuxt.js, Vuetify, Node.js, Express/MVC, RethinkDB, Socket.IO, Scrum, UML"},
+    fr:{title:"Monocommerce — SaaS multi-instance de gestion d’inventaire",desc:"Une plateforme cloud de gestion d’inventaire structurée comme un produit SaaS multi-instance et connectée aux workflows e-commerce.",context:"Stage de fin d'études de licence chez CyberOcean, Manouba Technopark, 2023. Projet d'équipe de quatre développeurs mené avec Scrum.",pipeline:"SaaS multi-instance → API Node.js structurée en MVC → frontend Vue.js/Nuxt.js/Vuetify organisé en MVVM → données RethinkDB → mises à jour temps réel avec Socket.IO.",data:"Domaine métier : produits, variantes, collections, employés/rôles et demandes posted data. Chaque instance client possède des ressources applicatives et une base isolées.",results:[["Sprint 1 · Variantes","Ajouter, modifier, supprimer et rechercher des variantes ; créer un produit avec options"],["Sprint 2 · Product web","Pages produit, variantes, collections, recherche, tri, panier et favoris"],["Sprint 3 · Posted data","Formulaire visiteur, notification temps réel à l'administrateur, consultation, copie, marquage et suppression"]],points:["Contribution aux trois sprints livrés dans une équipe Scrum de quatre développeurs","Réalisation de parcours côté client et de workflows d'inventaire côté administrateur","Intégration de Socket.IO pour les notifications temps réel des demandes","Gestion des rôles : administrateur, vendeur, blogueur, modérateur et développeur"],contribution:["J'ai contribué aux trois sprints Scrum, en couvrant les parcours côté client et les workflows d'inventaire côté administrateur.","J'ai mis en place les flux de gestion des produits et des variantes dans une équipe de quatre développeurs, en restant aligné sur les besoins e-commerce du client.","J'ai validé les mécanismes de notification temps réel pour les demandes via la couche Socket.IO partagée."],challenges:[{title:"Coordination d'un SaaS multi-instance",solution:"La plateforme a été structurée autour d'instances clientes isolées avec une logique SaaS partagée, pour conserver des ressources applicatives et de données propres à chaque client tout en réutilisant les mêmes workflows."},{title:"Visibilité opérationnelle en temps réel",solution:"Les demandes des visiteurs étaient remontées instantanément aux administrateurs via les notifications Socket.IO, ce qui réduisait le temps de tri et le temps de traitement."},{title:"Périmètre maîtrisé dans un stage confidentiel",solution:"Le projet a documenté uniquement le périmètre livré pendant les sprints et a séparé les ambitions mobiles ou e-commerce plus larges du périmètre validé."}],limits:"Le code source est confidentiel car il a été développé pendant le stage chez CyberOcean. L'application mobile employé et certaines extensions sont présentées comme perspectives et ne sont pas revendiquées comme livrées.",stack:"Vue.js, Nuxt.js, Vuetify, Node.js, Express/MVC, RethinkDB, Socket.IO, Scrum, UML"},
+    ar:{title:"Monocommerce — منصة SaaS متعددة النسخ لإدارة المخزون",desc:"منصة سحابية لإدارة المخزون مبنية كمنتج SaaS متعدد النسخ ومرتبطة بسير عمل التجارة الإلكترونية.",context:"تدريب مشروع نهاية الإجازة في CyberOcean، Manouba Technopark، 2023. مشروع جماعي لفريق من أربعة مطورين باستخدام Scrum.",pipeline:"SaaS متعددة النسخ ← API بـNode.js وفق MVC ← واجهة Vue.js/Nuxt.js/Vuetify وفق MVVM ← طبقة بيانات RethinkDB ← تحديثات فورية عبر Socket.IO.",data:"مجال التطبيق: المنتجات والمتغيرات والمجموعات والموظفون والأدوار وطلبات posted data. لكل نسخة عميل موارد تطبيق وقاعدة بيانات معزولة.",results:[["Sprint 1 · المتغيرات","إضافة وتعديل وحذف والبحث عن المتغيرات وإنشاء منتجات بخياراتها"],["Sprint 2 · Product web","صفحات المنتجات والمتغيرات والمجموعات والبحث والترتيب والسلة والمفضلة"],["Sprint 3 · Posted data","نموذج للزائر وإشعار فوري للمشرف وإدارة العرض والنسخ والتعليم كمقروء والحذف"]],points:["المساهمة في Sprints الثلاثة المنجزة ضمن فريق Scrum من أربعة مطورين","تطوير مسارات العميل وعمليات إدارة المخزون للمشرف","دمج Socket.IO للإشعارات الفورية لطلبات posted data","صلاحيات حسب الدور: مشرف وبائع ومدون ومراقب ومطور"],contribution:["ساهمت في جميع sprints الثلاثة، عبر تغطية مسارات العميل وعمليات إدارة المخزون من جهة المشرف.","نظّمت إدارة المنتجات والمتغيرات داخل فريق من أربعة مطورين مع الالتزام باحتياجات التجارة الإلكترونية للعميل.","قمت بالتحقق من تدفق الإشعارات الفورية لطلبات posted data عبر طبقة Socket.IO المشتركة."],challenges:[{title:"تنسيق SaaS متعدد النسخ",solution:"تمت بنية المنصة حول نسخ عميل معزولة مع منطق SaaS مشترك، بحيث يحتفظ كل عميل بموارده التطبيقية وقاعدة البيانات الخاصة به مع إعادة استخدام نفس مسارات المخزون."},{title:"الرؤية التشغيلية الفورية",solution:"تم رفع طلبات posted data فورًا إلى المشرفين عبر إشعارات Socket.IO، مما قلّل وقت التصفية وسرّع معالجة العمليات."},{title:"نطاق محدد في تدريب سري",solution:"وثّق المشروع فقط النطاق المنجز عبر الـsprints وميز بين الطموحات الأكبر في الموبايل أو التجارة الإلكترونية وبين الأدلة الموثقة للتسليم."}],limits:"الكود المصدري سري لأنه أُنجز أثناء التدريب في CyberOcean. تطبيق الهاتف وبعض التوسعات مذكورة كآفاق مستقبلية وليست ضمن العمل المنجز المؤكد.",stack:"Vue.js، Nuxt.js، Vuetify، Node.js، Express/MVC، RethinkDB، Socket.IO، Scrum، UML"}
   }
 },
 {
@@ -2635,7 +2661,7 @@ var P = [
     ar:{metrics:["91.8% تحقق · TunSL المرحلة 1","95.73% تحقق · ArASL (إشارات عربية)"]}
   },
   i18n:{
-    en:{title:"Sign Language Recognition — TunSL to Arabic Sign Alphabet",desc:"A two-phase Computer Vision project evolving from Tunisian sign-language vocabulary recognition to real-time Arabic sign-alphabet recognition and word construction.",
+    en:{title:"Tunisian Sign Learning Platform",desc:"A two-phase Computer Vision project evolving from Tunisian sign-language vocabulary recognition to real-time Arabic sign-alphabet recognition and word construction.",
       context:"UIK, 2024-2026. Phase 1: two-student project, 2024-2025. Phase 2: solo, 2025-2026. CRISP-DM methodology.",
       pipeline:"Phase 1 (TunSL): MediaPipe Hands (static mode, min confidence 0.2) → bounding box + 20 px margin crop → 224 × 224 resize → scale to [−1, 1] → MobileNetV2 (ImageNet pre-trained, frozen base, average pooling) + Dropout 0.3 → Dense 256 (L2) + BatchNorm + Dropout 0.4 → softmax (57 classes) → Adam 1e-3, augmentation (rotation ±5°, shift/shear/zoom 5%, no horizontal flip), EarlyStopping + ReduceLROnPlateau → export to TFLite → Flask/Node/Vue web app. Phase 2 (Arabic): webcam → YOLO (Ultralytics, ASL.pt) hand detection → 224 × 224 ROI → EfficientNet-B0 (ImageNet, frozen backbone, Linear 256 → ReLU → Dropout 0.4) → PyTorch, batch 32, 25 epochs, Adam 1e-3, mixed-precision (AMP) → letter → temporal stabilization (min stable time, confidence threshold, space/delete gestures) → word construction → spell-check / LLM correction → Arabic RTL rendering (arabic_reshaper + python-bidi + PIL).",
       data:"Phase 1: Kaggle 'First-Ever Tunisian Sign Language Dataset' — 4,423 images, 57 word classes across 5 themes (requests, destinations, family, transport, weekdays). Phase 2: ASL digits dataset (10 classes) + ArASL 54K (~32 Arabic sign-alphabet classes).",
@@ -2643,7 +2669,7 @@ var P = [
       points:["Phase 1 web app: learning gallery (categories, search), real-time webcam detection (MediaPipe + TFLite, confidence display), 10-question quiz (4 options, scored /10)","Phase 2: temporal stabilization prevents jitter; gesture shortcuts for space and delete","Phase 2 language layer: spell-checker + LLM-based next-word construction (~100k ChatGPT-generated sentences for the bigram baseline)","Phase 1 errors mostly on classes with few images and visually close signs"],
       limits:"Phase 2 uses Arabic Sign Language datasets (ArASL), not Tunisian data — this must be stated clearly. The 100% digits score should not be presented without a cross-subject validation. The project is still actively evolving, with further work planned on broader sign coverage, robustness across users and real-world generalisation.",
       stack:"Python, TensorFlow, PyTorch, MediaPipe, YOLO (Ultralytics), EfficientNet-B0, OpenCV, Flask, Node.js, Vue.js, arabic_reshaper, python-bidi"},
-    fr:{title:"Reconnaissance de la langue des signes — TunSL vers l’alphabet arabe",desc:"Projet de Computer Vision en deux phases, évoluant de la reconnaissance d’un vocabulaire de langue des signes tunisienne vers la reconnaissance temps réel de l’alphabet arabe.",
+    fr:{title:"Plateforme d’apprentissage de la langue des signes tunisienne",desc:"Projet de Computer Vision en deux phases, évoluant de la reconnaissance d’un vocabulaire de langue des signes tunisienne vers la reconnaissance temps réel de l’alphabet arabe.",
       context:"UIK, 2024-2026. Phase 1 : projet à deux étudiants, 2024-2025. Phase 2 : en solo, 2025-2026. Méthodologie CRISP-DM.",
       pipeline:"Phase 1 (TunSL) : MediaPipe Hands (mode statique, confiance min. 0,2) → recadrage boîte englobante + 20 px → redimensionnement 224 × 224 → normalisation [−1, 1] → MobileNetV2 (ImageNet gelé, pooling moyen) + Dropout 0,3 → Dense 256 (L2) + BatchNorm + Dropout 0,4 → softmax (57 classes) → Adam 1e-3, augmentation (rotation ±5°, déplacement/cisaillement/zoom 5%, pas de retournement horizontal), EarlyStopping + ReduceLROnPlateau → export TFLite → application web Flask/Node/Vue. Phase 2 (arabe) : webcam → YOLO (Ultralytics, ASL.pt) détection de la main → ROI 224 × 224 → EfficientNet-B0 (ImageNet gelé, tête Linear 256 → ReLU → Dropout 0,4) → PyTorch, batch 32, 25 epochs, Adam 1e-3, précision mixte (AMP) → lettre → stabilisation temporelle (temps min. stable, seuil de confiance, gestes espace/supprimer) → construction de mots → correction orthographique / LLM → rendu arabe RTL (arabic_reshaper + python-bidi + PIL).",
       data:"Phase 1 : jeu de données Kaggle « Premier jeu TunSL » — 4 423 images, 57 classes de mots en 5 thèmes (requêtes, destinations, famille, transport, jours). Phase 2 : jeu de données de chiffres ASL (10 classes) + ArASL 54K (~32 classes de l'alphabet des signes arabes).",
@@ -2651,7 +2677,7 @@ var P = [
       points:["Application web phase 1 : galerie d'apprentissage (catégories, recherche), détection webcam temps réel (MediaPipe + TFLite, affichage de la confiance), quiz 10 questions (4 options, noté /10)","Phase 2 : stabilisation temporelle pour éviter le tremblement ; raccourcis gestuels pour espace et suppression","Couche linguistique phase 2 : correcteur orthographique + construction de mots par LLM (~100k phrases générées avec ChatGPT pour le modèle bigramme de base)","Erreurs phase 1 principalement sur les classes peu représentées et les signes visuellement proches"],
       limits:"La phase 2 utilise des données de langue des signes arabe (ArASL), non tunisiennes — à préciser explicitement. Le 100 % sur les chiffres ne doit pas être présenté sans validation inter-sujets. Le projet est encore en développement et continue d’évoluer, notamment pour élargir la couverture des signes, améliorer la robustesse entre utilisateurs et renforcer la généralisation en conditions réelles.",
       stack:"Python, TensorFlow, PyTorch, MediaPipe, YOLO (Ultralytics), EfficientNet-B0, OpenCV, Flask, Node.js, Vue.js, arabic_reshaper, python-bidi"},
-    ar:{title:"التعرف على لغة الإشارة — TunSL إلى أبجدية الإشارة العربية",desc:"مشروع Computer Vision على مرحلتين ينتقل من التعرف على مفردات لغة الإشارة التونسية إلى التعرف الفوري على أبجدية الإشارة العربية وبناء الكلمات.",
+    ar:{title:"منصة تعلم لغة الإشارة التونسية",desc:"مشروع Computer Vision على مرحلتين ينتقل من التعرف على مفردات لغة الإشارة التونسية إلى التعرف الفوري على أبجدية الإشارة العربية وبناء الكلمات.",
       context:"جامعة ابن خلدون (UIK)، 2024-2026. المرحلة 1: مشروع لطالبين، 2024-2025. المرحلة 2: فردي، 2025-2026. منهجية CRISP-DM.",
       pipeline:"المرحلة 1 (TunSL): MediaPipe Hands (وضع ثابت، ثقة دنيا 0.2) ← قص الإطار المحيط + 20 بكسل ← تغيير الحجم إلى 224×224 ← تطبيع [−1, 1] ← MobileNetV2 (ImageNet مجمّد، تجميع متوسط) + Dropout 0.3 ← Dense 256 (L2) + BatchNorm + Dropout 0.4 ← softmax (57 فئة) ← Adam 1e-3 وتعزيز البيانات (تدوير ±5° وإزاحة/قص/تكبير 5% بدون قلب أفقي) وEarlyStopping + ReduceLROnPlateau ← تصدير TFLite ← تطبيق ويب Flask/Node/Vue. المرحلة 2 (العربية): كاميرا ← YOLO (Ultralytics، ASL.pt) للكشف عن اليد ← ROI 224×224 ← EfficientNet-B0 (ImageNet مجمّد، رأس Linear 256 → ReLU → Dropout 0.4) ← PyTorch، دفعة 32، 25 epoch، Adam 1e-3، دقة مختلطة (AMP) ← حرف ← تثبيت زمني (وقت استقرار دنيا وعتبة ثقة وإيماءات مسافة/حذف) ← بناء كلمات ← تصحيح إملائي/LLM ← عرض عربي RTL (arabic_reshaper + python-bidi + PIL).",
       data:"المرحلة 1: مجموعة Kaggle 'أول مجموعة TunSL' — 4,423 صورة و57 فئة كلمات في 5 مواضيع (طلبات ووجهات وعائلة ونقل وأيام). المرحلة 2: مجموعة أرقام ASL (10 فئات) + ArASL 54K (~32 فئة من أبجدية الإشارة العربية).",
@@ -2827,7 +2853,7 @@ var P = [
   }
 },
 {
-  slug:"zombie-multi-agent-simulation", cat:["ai"], cover:cover("🧟","linear-gradient(135deg,#14532d,#166534)"), gallery:["images/projects/zombie-simulation/01-image.png","images/projects/zombie-simulation/02-image.png","images/projects/zombie-simulation/03-image.png","images/projects/zombie-simulation/04-image.png","images/projects/zombie-simulation/05-image.png"],
+  slug:"zombie-multi-agent-simulation", cat:["ai"], cover:cover("🧟","linear-gradient(135deg,#14532d,#166534)"), gallery:["images/projects/zombie-simulation/05-image.png","images/projects/zombie-simulation/01-image.png","images/projects/zombie-simulation/02-image.png","images/projects/zombie-simulation/03-image.png","images/projects/zombie-simulation/04-image.png"],
   tags:["Multi-Agent Systems","Mesa","Python","Simulation"],
   code:null, codeNote:{en:"Repository link not published",fr:"Lien du dépôt non publié",ar:"رابط المستودع غير منشور"},
   card:{
@@ -2842,6 +2868,9 @@ var P = [
   }
 },
 ];
+
+var signProjectIndex = P.findIndex(function(project){ return project.slug === "tunsl"; });
+if(signProjectIndex !== -1 && signProjectIndex >= 5) P.splice(5,0,P.splice(signProjectIndex,1)[0]);
 
 var PROJECT_RESOURCES = {};
 P.forEach(function(project){
@@ -2923,7 +2952,9 @@ var MARKS = {
 };
 
 /* ================= render ================= */
-var cur = "fr", showAll = false, FEATURED = 5, activeFilter = "all";
+var cur = "fr", showAll = false, FEATURED = 6, activeFilter = "all";
+var mobileProjectLayout = window.matchMedia("(max-width: 760px)");
+var lastMobileProjectLayout = mobileProjectLayout.matches;
 var languageMotionTimer = 0;
 function $(id){return document.getElementById(id)}
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;")}
@@ -3146,40 +3177,30 @@ function renderFilters(T){
   }
 }
 
-function projectCardMetrics(p,lang){
-  var metrics = p.card && p.card[lang] && p.card[lang].metrics;
-  if(!Array.isArray(metrics) || !metrics.length) return "";
-  return '<div class="project-metrics" aria-label="'+esc(L[lang].mRes)+'">'+
-    metrics.map(function(metric){ return '<span class="project-metric">'+esc(metric)+'</span>'; }).join("")+
-  '</div>';
-}
-
-function projectCardAccess(p,T){
-  var links = [];
-  if(p.demo) links.push([T.projectDemoAvailable,"open_in_new"]);
-  if(p.code) links.push([T.projectCodeAvailable,"code"]);
-  if(DRIVE_PROJECT_FILES[p.slug]) links.push([T.projectFilesAvailable,"description"]);
-  if(!links.length) links.push([T.projectNoPublicLink,"info"]);
-  return '<div class="project-access-tags" aria-label="'+esc(T.projectResources)+'">'+
-    links.map(function(link){
-      return '<span>'+mi(link[1],14,"ui-icon")+esc(link[0])+'</span>';
-    }).join("")+
-  '</div>';
-}
-
 function renderProjects(T,lang){
   var grid = $("projgrid");
   grid.innerHTML = "";
   var pool = activeFilter === "all" ? P : P.filter(function(p){ return p.cat && p.cat.indexOf(activeFilter) !== -1; });
   var list = showAll ? pool : pool.slice(0, FEATURED);
+  var projectCategories = {
+    smartsalesadvisor:{en:"AI & ML · Salesforce & CRM",fr:"IA & ML · Salesforce & CRM",ar:"الذكاء الاصطناعي · Salesforce وCRM"},
+    caredify:{en:"Healthcare AI · Web & Systems",fr:"IA pour la santé · Web et systèmes",ar:"ذكاء اصطناعي صحي · الويب والأنظمة"},
+    tuninventory:{en:"SaaS & E-commerce",fr:"SaaS et e-commerce",ar:"SaaS والتجارة الإلكترونية"},
+    "earthquake-tsunami":{en:"Machine Learning · Data Science",fr:"Machine Learning · Data Science",ar:"التعلم الآلي · علوم البيانات"},
+    "fashion-mnist":{en:"Machine Learning · Classification",fr:"Machine Learning · Classification",ar:"التعلم الآلي · التصنيف"},
+    "task-management-soa":{en:"Web Applications · SOA",fr:"Applications web · SOA",ar:"تطبيقات الويب · SOA"},
+    tunsl:{en:"Computer Vision · AI & ML",fr:"Vision par ordinateur · IA & ML",ar:"الرؤية الحاسوبية · الذكاء الاصطناعي"},
+    "rag-chatbot":{en:"NLP · AI & ML",fr:"NLP · IA & ML",ar:"معالجة اللغة الطبيعية · الذكاء الاصطناعي"},
+    "e-service":{en:"Web Applications · MEVN",fr:"Applications web · MEVN",ar:"تطبيقات الويب · MEVN"},
+    dams:{en:"Web Applications · Healthcare",fr:"Applications web · Santé",ar:"تطبيقات الويب · الصحة"},
+    "tunisie-telecom":{en:"Web Applications · Telecom",fr:"Applications web · Télécom",ar:"تطبيقات الويب · الاتصالات"},
+    dataviz:{en:"Data Science & Analytics",fr:"Data Science et analytique",ar:"علوم البيانات والتحليلات"},
+    "zombie-multi-agent-simulation":{en:"Multi-Agent Systems · AI & ML",fr:"Systèmes multi-agents · IA & ML",ar:"الأنظمة متعددة الوكلاء · الذكاء الاصطناعي"}
+  };
 
   list.forEach(function(p,idx){
     var d = p.i18n[lang];
-    var categoryLabel = p.cat && p.cat.indexOf("crm") !== -1
-      ? (lang === "fr" ? "Salesforce et CRM" : lang === "ar" ? "Salesforce و CRM" : "Salesforce & CRM")
-      : p.cat && p.cat.indexOf("ai") !== -1
-        ? (lang === "fr" ? "IA et machine learning" : lang === "ar" ? "الذكاء الاصطناعي وتعلم الآلة" : "AI & machine learning")
-        : (lang === "fr" ? "Systèmes data et digitaux" : lang === "ar" ? "أنظمة البيانات والحلول الرقمية" : "Data & digital systems");
+    var categoryLabel = projectCategories[p.slug] ? projectCategories[p.slug][lang] : "";
     var node = document.createElement("article");
     node.className = "project-card group relative rounded-[32px] glass-panel bg-surface p-4 transition-all duration-300 flex flex-col h-full overflow-hidden text-left rtl:text-right reveal" +
       (p.soon ? " opacity-90" : " hover:shadow-soft-hover hover:-translate-y-1 cursor-pointer");
@@ -3204,11 +3225,10 @@ function renderProjects(T,lang){
         '<div class="project-card-kicker">'+esc(categoryLabel)+'</div>'+
         '<h4 class="text-lg font-bold text-text-primary mb-2 leading-snug line-clamp-2">'+esc(d.title)+'</h4>'+
         '<p class="project-desc text-text-secondary text-sm leading-relaxed mb-4">'+esc(descText)+'</p>'+
-        projectCardMetrics(p,lang)+
-        projectCardAccess(p,T)+
         (p.soon ? '' : '<span aria-hidden="true" class="project-card-cta">'+esc(T.projectDetails)+mi("arrow_forward",16,"flip")+'</span>')+
       '</div>';
 
+    grid.appendChild(node);
     function bindStackToggle(){
       var stackToggle=node.querySelector(".project-stack-more button");
       if(!stackToggle) return;
@@ -3231,13 +3251,18 @@ function renderProjects(T,lang){
         openSheet(p);
       });
     }
-    grid.appendChild(node);
   });
 
   grid.dataset.count = String(list.length);
   prepareProgressiveImages(grid);
-  $("t-toggle").textContent = showAll ? T.seeLess : T.seeAll;
-  $("togglebtn").style.display = pool.length > FEATURED ? "" : "none";
+  var toggleLabel = showAll ? T.seeLess : T.seeAll;
+  var hasMoreProjects = pool.length > FEATURED;
+  $("t-toggle").textContent = toggleLabel;
+  $("t-toggle-mobile").textContent = toggleLabel;
+  $("togglebtn").setAttribute("aria-expanded",String(showAll));
+  $("togglebtn-mobile").setAttribute("aria-expanded",String(showAll));
+  $("togglebtn").style.display = hasMoreProjects && !mobileProjectLayout.matches ? "" : "none";
+  $("togglebtn-mobile").style.display = hasMoreProjects && mobileProjectLayout.matches ? "inline-flex" : "none";
   observeReveal();
   if($("scrim").classList.contains("open") && activeSheetProject && $("gallery-caption")){
     var activeIndex = Number($("project-gallery").getAttribute("data-index") || 0);
@@ -3845,9 +3870,17 @@ function boot(){
   }
 
   /* projects toggle */
-  $("togglebtn").addEventListener("click", function(){
+  function toggleProjects(){
     showAll = !showAll;
     renderProjects(L[cur], cur);
+  }
+  $("togglebtn").addEventListener("click", toggleProjects);
+  $("togglebtn-mobile").addEventListener("click", toggleProjects);
+  window.addEventListener("resize", function(){
+    var isMobileLayout = mobileProjectLayout.matches;
+    if(isMobileLayout === lastMobileProjectLayout) return;
+    lastMobileProjectLayout = isMobileLayout;
+    renderProjects(L[cur],cur);
   });
 
   $("contact-form").addEventListener("submit", async function(event){
